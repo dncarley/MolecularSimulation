@@ -1,0 +1,88 @@
+		---	README --
+---------------------------------------------------------------
+		-- Molecular Simulation 1.0.1 -- 
+---------------------------------------------------------------
+
+--- Overview
+
+This directory contains the source to MolecularSimulation, a simulation
+environment for experimentation with DNA computation.
+
+Three molecular algorithms to solve Satsfiability are included in the
+implementation.  These are:
+
+	Liptons's algorithm 			(Brute force) 
+	Ogihara and Ray's algorithm 	(Branching heuristics) 
+	Distribution algorithm			(Constructive)
+
+--- License
+
+Molecular Simulation is released under the MIT license.  
+
+See LICENSE for details.
+
+
+---------------------------------------------------------------
+--- Usage
+
+Several build scripts are included for building and executing the
+simulation environment.
+
+To build the file execute:
+
+$ perl build.pl <options>
+
+For automated build and execution of all sub directories of DIMACS *.cnf
+
+$ perl runSimulation.pl -p <Directory>
+
+	---	runSimulation.pl will generate output for the status of the expression.
+
+---------------------------------------------------------------
+--- Modifications
+
+If you plan to modify the environment or create molecular experiments,
+then you should visit the project page at:
+
+	www.cs.rit.edu/~dnc6813/project/generated/index.html
+
+This site provides full documentation about all files.  Details of the
+implementation is described and extensions can be introduced.  This
+could be your own molecular algorithm using the DNA, dna32, oligo, and
+gel datatypes.
+
+Extending these definitions operating with larger molecular structures
+could be done to map:
+
+	DNA <--> RNA <--> Protein,
+
+describing the central dogma of molecular biology.
+
+Note that the DNA is defined as an enumeration as a self complementary structure.  
+
+	A 	--- 	00
+	C	---		01
+	G	---		10
+	T	---		11
+	
+Notice that:
+	
+	complement(A) = T
+	complement(C) = G
+	complement(G) = C
+	complement(T) = A
+
+Due to the behavior of RNA, we could extend our representation to 
+
+	000		A
+	001		C
+	010		G
+	011		T
+------------------
+	100		A		(directed from T), complement as U
+	101		C
+	110		G
+	111		U
+
+providing a self complementary structure.  Next, we may synthesize the 
+representation of proteins from DNA and RNA.  
