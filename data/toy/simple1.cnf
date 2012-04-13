@@ -1,0 +1,4 @@
+c This file is a simple 1 clause 3-cnf formula
+c
+p cnf 3 1
+1 2 3 0

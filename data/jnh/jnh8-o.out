@@ -1,0 +1,20 @@
+c 
+c MolecularSimulation 0.9.3
+c Simulation written: Jan 17 2012 -- 13:33:12
+c Test: Ogihara-Ray
+c Input: ./data/jnh/jnh8.cnf
+c 
+s UNSATISFIABLE
+v 0
+c algorithmType:  Lipton
+c algorithmTime:  0
+c solutionMemory: 0
+c mixCount:       392
+c extractCount:   3835
+c appendCount:    196
+c splitCount:     98
+c spliceCount:    0
+c purifyCount:    865
+c numVar:         100
+c numClause:      850
+c 

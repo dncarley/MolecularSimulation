@@ -1,0 +1,20 @@
+c 
+c MolecularSimulation 0.9.3
+c Simulation written: Feb  3 2012 -- 09:27:43
+c Test: Ogihara-Ray
+c Input: ./data/example/example_N5_M4.cnf
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 5 0
+c algorithmType:  Lipton
+c algorithmTime:  0
+c solutionMemory: 26
+c mixCount:       12
+c extractCount:   20
+c appendCount:    6
+c splitCount:     3
+c spliceCount:    0
+c purifyCount:    7
+c numVar:         5
+c numClause:      4
+c 

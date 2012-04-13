@@ -1,0 +1,58 @@
+### pre-simulation
+
+~ := research/implementation/simulation/
+
+execute: ~/tools $ perl mkdir.pl
+
+	outcome: creates directories for *.cnf sweep
+			 SET_002, SET_004, ... SET_200
+	comments: Each *.cnf within a SET contain fixed ratio r = m/n
+			  For example, SET_004, holds formulas with r = 0.4
+
+execute: ~/ $ perl buildGenerate.pl
+
+	outcome: compiles ksat.c, and executes over the sweep parameters
+		r := [2, 200],  by +=2
+		k := 3
+		n := {
+		m := {
+		s := [0, 1000), by +=1
+		
+		ksat k n m s > ~/data/SET_00r/SWEEP_r_k_n_m_s.cnf
+		
+	comments: takes approximately 15-20 minutes on single core
+
+### test
+
+execute: ~/ $ perl buildTest.pl
+
+
+
+
+	
+### simulation	
+	
+execute: ~/ $ perl build.pl
+
+	options:
+		-l		--- run Lipton's algorithm
+		-o		--- run Ogihara's algorithm
+		-d		---	run Distribution	~ algorithm
+		<n>	--- start at specified serial 
+	outcome:
+		default: 
+			Simulate each of the algorithms for each SWEEP_*.cnf
+			located in ~/data/
+		options:
+			if any algorithm option is specified, then only specified 
+			algorithms will be executed
+		
+			Example: $ perl buildSimulate.pl -L -S 0
+				Will execute Lipton, Split-Mix over all SWEEP_*.cnf
+
+			Example: $ perl buildSimulate.pl 0
+				Execute from 0 (default)
+			
+			
+		
+		

@@ -1,0 +1,17 @@
+c 
+c MolecularSimulation 0.9.3
+c Simulation written: Jan 13 2012 -- 15:17:57
+c Test: Ogihara-Ray
+c Input: ./data/testCNF/SWEEP_R5_K3_N20_M88_S000.cnf
+c 
+s SATISFIABLE
+v -1 -2 -3 4 -5 -6 -7 8 9 10 -11 -12 13 14 -15 -16 -17 18 -19 20 0
+c algorithmTime:  0
+c solutionMemory: 42
+c mixCount:       72
+c extractCount:   440
+c appendCount:    36
+c splitCount:     18
+c spliceCount:    0
+c purifyCount:    106
+c 

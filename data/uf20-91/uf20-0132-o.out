@@ -1,0 +1,20 @@
+c 
+c MolecularSimulation 0.9.3
+c Simulation written: Jan 24 2012 -- 12:52:54
+c Test: Ogihara-Ray
+c Input: ./data/uf20-91/uf20-0132.cnf
+c 
+s SATISFIABLE
+v 1 2 3 4 5 6 -7 8 -9 10 11 12 -13 -14 -15 -16 17 18 19 -20 0
+c algorithmType:  Lipton
+c algorithmTime:  0
+c solutionMemory: 40
+c mixCount:       72
+c extractCount:   455
+c appendCount:    36
+c splitCount:     18
+c spliceCount:    0
+c purifyCount:    109
+c numVar:         20
+c numClause:      91
+c 

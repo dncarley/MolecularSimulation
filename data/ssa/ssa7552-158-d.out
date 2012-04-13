@@ -1,0 +1,11 @@
+c 
+c MolecularSimulation 0.9.3
+c Simulation written: Jan 11 2012 -- 09:53:16
+c Test: Distribution
+c Input: ./data/ssa/ssa7552-158.cnf
+c 
+s UNSATISFIABLE
+v 0
+c Execution time: 1
+c Memory usage:   0
+c 

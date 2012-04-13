@@ -1,0 +1,17 @@
+c 
+c MolecularSimulation 0.9.3
+c Simulation written: Jan 13 2012 -- 15:17:57
+c Test: Distribution
+c Input: ./data/testCNF/SWEEP_R1_K3_N20_M16_S001.cnf
+c 
+s SATISFIABLE
+v 1 11 -12 14 -15 -16 -17 18 -19 20 0
+c algorithmTime:  34
+c solutionMemory: 243655
+c mixCount:       45
+c extractCount:   0
+c appendCount:    856025
+c splitCount:     45
+c spliceCount:    351932
+c purifyCount:    15
+c 

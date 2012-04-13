@@ -1,0 +1,17 @@
+c 
+c MolecularSimulation 0.9.3
+c Simulation written: Jan 13 2012 -- 15:17:57
+c Test: Lipton
+c Input: ./data/testCNF/SWEEP_R4_K3_N20_M76_S002.cnf
+c 
+s SATISFIABLE
+v -1 -2 3 4 5 -6 -7 -8 -9 -10 -11 -12 -13 -14 15 -16 -17 -18 19 -20 0
+c algorithmTime:  146
+c solutionMemory: 49
+c mixCount:       326
+c extractCount:   228
+c appendCount:    40
+c splitCount:     20
+c spliceCount:    0
+c purifyCount:    77
+c 

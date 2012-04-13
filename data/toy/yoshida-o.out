@@ -1,0 +1,11 @@
+c 
+c MolecularSimulation 0.9.3
+c Simulation written: Jan  9 2012 -- 17:09:38
+c Test: Ogihara-Ray
+c Input: ./data/toy/yoshida.cnf
+c 
+s UNSATISFIABLE
+v 0
+c Execution time: 0
+c Memory usage:   0
+c 
