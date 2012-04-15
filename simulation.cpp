@@ -1,4 +1,3 @@
-
 #include "simulation.h"
 
 /*! \mainpage Molecular Simulation
