@@ -89,8 +89,8 @@ foreach $cnfFile (@filePath) {
 		$input = $cnfPath."/".$cnfFile;
 		
 		@dirTree = split /\.cnf$/, $cnfFile;
-		$output  = "./";
-		$output  .= @dirTree[$#dirTree];
+		$output  = $cnfPath."/";
+		$output .= @dirTree[$#dirTree];
 		$output .= "-";
 		$output .= $algorithmType;
 		$output .= ".out";
