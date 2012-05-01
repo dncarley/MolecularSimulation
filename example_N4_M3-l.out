@@ -1,0 +1,20 @@
+c 
+c MolecularSimulation 1.0.1
+c Simulation written: Tue May  1 09:59:46 2012
+c Test: Lipton
+c Input: ./data/example/example_N4_M3.cnf
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 0
+c algorithmType:  Lipton
+c algorithmTime:  0
+c solutionMemory: 17
+c mixCount:       18
+c extractCount:   9
+c appendCount:    8
+c splitCount:     4
+c spliceCount:    0
+c purifyCount:    4
+c numVar:         4
+c numClause:      3
+c 

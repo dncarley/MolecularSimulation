@@ -76,34 +76,19 @@ void simulation::start(int argc, char ** argv){
 
 	arguments testArguments;
 
-	// Set version revision number 
-	
+	// Set version revision number 	
 	testArguments.versionNumber = (char*) malloc (10);
-	strcpy(testArguments.versionNumber, "1.0.1");
+	strcpy(testArguments.versionNumber, "1.0.2");
 	
 	testArguments.parseArguments(argc, argv);					///< Parse user arguments
-
-	// Print debug argument list
-	if(testArguments.debug)	testArguments.printArguments();
-
 	testArguments.inputCNF.parseCNF( testArguments.filename);	///< Parse DIMACS CNF
-
-
-	// Print CNF details
-/*
-	if(testArguments.debug){
-		testArguments.inputCNF.printCNF_table();
-		testArguments.inputCNF.printCNF_order();
-	}
-*/	
-
 	testArguments = executeTest(testArguments);					///< Execute algorithm
 	testArguments.writeOutput();								///< Write output results
 
-
-	// Print debug argument list
-	if(testArguments.debug)	testArguments.printArguments();
-	
+	// Print debug arguments
+	if(testArguments.debug){
+		testArguments.printArguments();
+	}
 }
 
 

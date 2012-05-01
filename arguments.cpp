@@ -112,6 +112,8 @@ void arguments::parseArguments(int argc, char ** argv){
 /// Prints a block of information about the current argument state.
 ///
 void arguments::printArguments(){
+	
+	size_t i, j;
 
 	printf("algorithmType :\t%i\n", algorithmType);
 	printf("debug         :\t%i\n", debug);
@@ -122,8 +124,23 @@ void arguments::printArguments(){
 	printf("filename      :\t%s\n", filename);
 	printf("outputfile    :\t%s\n", outputfile);
 	printf("version       :\t%s\n", versionNumber);
-	printf("inputCNF      :\t(not shown)\n");
-	printf("result        :\t(not shown)\n");
+	printf("inputCNF      :\t\n");
+	inputCNF.printCNF_order();
+	printf("result        :\t\n");
+	
+	if(result.size() >0){
+		for(i = 0; i < result.size(); i++){	
+			printf("s ");
+			for(j = 1; j < result[0].size(); j++){
+				if( result[i][j].isValid() ){
+					if(result[i][j].neg == 1)
+						printf("-");			
+					printf("%lu ", (unsigned long)j);
+				}
+			}
+			printf("0\n");
+		}
+	}
 
 }
 
