@@ -57,6 +57,27 @@ void oligo::append(DNA s){
 }
 
 ///
+/// Set a DNA (s) at position (n).  If (n) > (self.size), then (self.size) = (n). 
+///
+void oligo::setNeuc(unsigned n, DNA s){
+
+	unsigned block, cell;
+
+	block = n >> 5;
+	cell  = n & 31;
+	
+	if(block >= sequence.size()){
+		sequence.resize(block+1);
+	}
+	
+	sequence[block].set(cell, s);
+	
+	if(n >= size){
+		size = n + 1;
+	}
+}
+
+///
 /// Return true (1) if DNA (s) is located at position (n) in sequence.  Otherwise return false (0).
 ///
 bool oligo::match(unsigned n, DNA s){
@@ -70,7 +91,6 @@ bool oligo::match(unsigned n, DNA s){
 	returnValue = sequence[block].match(cell, s);
 
 	return returnValue;
-
 }
 
 ///

@@ -7,7 +7,7 @@
 
 use Term::ANSIColor;	
 
-$profile	= 0;	#set to build for gprof
+$profile	= 1;	#set to build for gprof or gdb
 
 #$compilier = "g++-mp-4.4";
 $compilier = "g++";
@@ -21,14 +21,14 @@ print color 'reset';
 ############# set build options
 ##############################################
 $outputExe = "execute/simulation";
-$mainEntry = "simulation.cpp";
+$mainEntry = "src/simulation.cpp";
 
-@inc_ARG = ("arguments.cpp");
-@inc_CNF = ("inputCNF.cpp");
-@inc_EXE = ("executeTest.cpp");
-@inc_ALG = ("liptonSat.cpp", "ogiharaRaySat.cpp", "distributionSat.cpp");
-@inc_DAT = ("dna32.cpp", "oligo.cpp", "gel.cpp", "datatypes.cpp");
-@inc_VFY = ("verifySat.cpp");
+@inc_ARG = ("src/arguments.cpp");
+@inc_CNF = ("src/inputCNF.cpp");
+@inc_EXE = ("src/executeTest.cpp");
+@inc_ALG = ("src/liptonSat.cpp", "src/ogiharaRaySat.cpp", "src/distributionSat.cpp");
+@inc_DAT = ("src/dna32.cpp", "src/oligo.cpp", "src/gel.cpp", "src/datatypes.cpp");
+@inc_VFY = ("src/verifySat.cpp");
 
 @include = (@inc_ARG, @inc_CNF, @inc_EXE, @inc_ALG, @inc_DAT, @inc_VFY);
 

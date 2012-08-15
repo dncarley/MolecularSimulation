@@ -110,7 +110,8 @@ void CNF::parseCNF(const char* filename){
 		myfile.close();
 	}
 	else{
-		fprintf(stderr, "Unable to open file"); 
+		fprintf(stderr, "Unable to open file\n"); 
+		exit(1);
 	}
 	
 	// construct ordered CNF expression

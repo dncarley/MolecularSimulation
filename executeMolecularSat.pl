@@ -11,6 +11,7 @@
 #
 
 use Term::ANSIColor;
+use Parallel::ForkManager;
 
 $toFile = 0;			# 0 stdout, 1 to specified file
 $debug = "";			# debug flag 
@@ -48,9 +49,7 @@ foreach $i (0 .. $#ARGV) {
   }
 }
 
-
-
-
+######
 ###### If no algorithms specified, test all three algorithms
 ######
 $algSize = @algorithm;
@@ -58,14 +57,13 @@ if( $algSize == 0 ){
 	@algorithm = ('l', 'o', 'd');
 }
 
+######
 ###### Select path for cnf files
 ######
 if( $cnfPath eq ""){
 	@filePath  = <data/testCNF/*.cnf>;
 	$cnfPath = "./";
-
 }else{
-
 	opendir(D, "$cnfPath") || die "Can't opedir $d: $!\n";
 	@tempPath = readdir(D);
 	closedir(D);
@@ -79,15 +77,18 @@ if( $cnfPath eq ""){
 	}
 }
 
-##############################################
-############# execute
-##############################################
+######
+###### execute
+######
+
+my $pm = new Parallel::ForkManager(2);
 
 foreach $cnfFile (@filePath) {
 	foreach $algorithmType (@algorithm){		
-
-		$input = $cnfPath."/".$cnfFile;
+	
+		$pm->start and next;
 		
+		$input = $cnfPath."/".$cnfFile;
 		@dirTree = split /\.cnf$/, $cnfFile;
 		$output  = $cnfPath."/";
 		$output .= @dirTree[$#dirTree];
@@ -106,8 +107,9 @@ foreach $cnfFile (@filePath) {
 		print color 'bold green';
 		print(@run);		
 		print("\n");
-		print color 'reset';
-				
+		print color 'reset';	
+					
 		system(@run);
+		$pm->finish;
 	} 
 }

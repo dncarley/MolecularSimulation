@@ -1,11 +1,20 @@
 c 
-c MolecularSimulation 0.9.3
-c Simulation written: Jan  9 2012 -- 17:09:38
+c MolecularSimulation 1.0.2
+c Simulation written: Thu Jul 19 14:52:42 2012
 c Test: Lipton
 c Input: ./data/toy/yoshida.cnf
 c 
-s UNSATISFIABLE
-v 0
-c Execution time: 0
-c Memory usage:   0
+s SATISFIABLE
+v 1 2 -3 -4 0
+c algorithmType:  Lipton
+c algorithmTime:  0
+c solutionMemory: 3
+c mixCount:       46
+c extractCount:   30
+c appendCount:    8
+c splitCount:     4
+c spliceCount:    0
+c purifyCount:    11
+c numVar:         4
+c numClause:      10
 c 

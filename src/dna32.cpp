@@ -90,8 +90,8 @@ void dna32::set(unsigned n, DNA neuc){
 		default:
 			shift = 0L;
 			break;
-	
 	}
+	sequence &= ~(3L << (62 - (n<<1)));	
 	sequence |= (shift << (62 - (n<<1)));
 }
 

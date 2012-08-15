@@ -138,6 +138,17 @@ void gel::append(oligo s){
 
 }
 
+///
+///
+///
+void gel::setNeuc(unsigned n, DNA s){
+
+	for(size_t i = 0; i < tube.size(); i++){
+		tube[i].setNeuc(n, s);
+	
+	}		
+}		
+
 /// 
 /// Filters all oligos that are not equal to the DNA (s) at location (n).
 ///

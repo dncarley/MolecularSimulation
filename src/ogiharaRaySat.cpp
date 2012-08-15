@@ -18,7 +18,7 @@ gel get_UV_Sat( gel T, variable u, variable v, runtimeData & myData){
 
 	T_T.mix( T_uT);		
 	T_T.mix( T_vT);
-	myData.extractCount += 2;
+	myData.mixCount += 2;
 	
 	T_T.purifyGel();
 	myData.purifyCount += 1;

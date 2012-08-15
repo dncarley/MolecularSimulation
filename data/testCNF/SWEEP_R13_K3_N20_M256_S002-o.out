@@ -1,17 +1,20 @@
 c 
-c MolecularSimulation 0.9.3
-c Simulation written: Jan 13 2012 -- 15:17:57
+c MolecularSimulation 1.0.2
+c Simulation written: Tue Aug 14 15:19:26 2012
 c Test: Ogihara-Ray
 c Input: ./data/testCNF/SWEEP_R13_K3_N20_M256_S002.cnf
 c 
 s UNSATISFIABLE
 v 0
-c algorithmTime:  0
+c algorithmType:  Ogihara-Ray
+c algorithmTime:  0.021908
 c solutionMemory: 0
-c mixCount:       72
-c extractCount:   1280
+c mixCount:       584
+c extractCount:   768
 c appendCount:    36
 c splitCount:     18
 c spliceCount:    0
 c purifyCount:    274
+c numVar:         20
+c numClause:      256
 c 

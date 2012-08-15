@@ -34,11 +34,11 @@ arguments::arguments(){
 		debug		  = 0;
 		writeFile	  = 0;
 		isSat		  = 0;
-		//char * filename;
-		//char * outputfile;
-		//char * versionNumber;
-		//CNF inputCNF;
-		//std::vector< std::vector<lit> > result;		// result stored in [<0:numResults >[1:n]]
+		filename = NULL;
+		outputfile = NULL;
+		versionNumber = NULL;
+		CNF inputCNF;
+		result.clear();		// result stored in [<0:numResults >[1:n]]
 }
 
 ///
@@ -46,8 +46,6 @@ arguments::arguments(){
 ///
 arguments::~arguments(){
 
-	// add destructors.
-	
 }
 
 ///
@@ -104,7 +102,8 @@ void arguments::parseArguments(int argc, char ** argv){
 			}
 		}
 	}else{
-		fprintf(stderr, "usage:\nrequires at least a `*_filename.cnf'\n'");
+		fprintf(stderr, "Usage:\n\tRequired arguments:\n\t\tInput: i <input filename>\n\tOptional:\n\t\tAlgorithm: -a\n\t\t\tl --- Lipton\n\t\t\to --- Ogihara-Ray\n\t\t\td --- Distribution\n\t\tDebug: -d\n\t\tWrite: -w <output filename>\n");
+		exit(1);
 	}
 }
 
@@ -119,7 +118,7 @@ void arguments::printArguments(){
 	printf("debug         :\t%i\n", debug);
 	printf("debug         :\t%i\n", writeFile);
 	printf("isSat         :\t%i\n", isSat);
-	printf("executionTime :\t%lu\n", (unsigned long)myData.executionTime);
+	printf("executionTime :\t%f\n", myData.executionTime);
 	printf("memoryUsage   :\t%lu\n", (unsigned long)myData.memoryUsage);
 	printf("filename      :\t%s\n", filename);
 	printf("outputfile    :\t%s\n", outputfile);
@@ -220,7 +219,7 @@ void arguments::writeOutput(){
 
 	// print details about execution
 	fprintf(fp, "c algorithmType:  %s\n",  algorithmName.c_str());
-	fprintf(fp, "c algorithmTime:  %lu\n", (unsigned long)myData.executionTime);
+	fprintf(fp, "c algorithmTime:  %f\n",  myData.executionTime);
 	fprintf(fp, "c solutionMemory: %lu\n", (unsigned long)myData.memoryUsage);
 	fprintf(fp, "c mixCount:       %lu\n", (unsigned long)myData.mixCount);
 	fprintf(fp, "c extractCount:   %lu\n", (unsigned long)myData.extractCount);

@@ -8,9 +8,9 @@
 arguments executeTest(const arguments myArgs){
 
 	arguments returnArgs;
-	time_t s0, s1;
+	clock_t s0, s1;
 
-	s0 = time( NULL );
+	s0 = clock();
 
 	switch(myArgs.algorithmType){
 		case 0:
@@ -27,8 +27,8 @@ arguments executeTest(const arguments myArgs){
 			break;	
 	}
 	
-	s1 = time(NULL);
-	returnArgs.myData.executionTime = s1-s0;
+	s1 = clock( );
+	returnArgs.myData.executionTime = ((float)s1-s0)/CLOCKS_PER_SEC;
 	
 	returnArgs.memoryUsage = 0;
 	for(size_t i = 0; i < returnArgs.result.size(); i++){
@@ -36,7 +36,6 @@ arguments executeTest(const arguments myArgs){
 			returnArgs.myData.memoryUsage += sizeof(literal);
 		}
 	}
-	
 	
 	return returnArgs;
 }

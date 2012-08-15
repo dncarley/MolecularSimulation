@@ -27,6 +27,7 @@ class gel : public oligo
 		void append(DNA s);
 		void append(dna32 s);
 		void append(oligo s);
+		void setNeuc(unsigned n, DNA s);		
 		gel filterOthers(unsigned n, DNA s);
 		gel filterOthers(variable inVar);
 		gel filter(unsigned n, dna32 s);

@@ -67,8 +67,24 @@ std::vector<literal> oligo2satVector(oligo inAssignment, int encoding){
 		}
 	
 	}else if(encoding == 1){
-	
-	
+
+		resultVector.resize(inAssignment.size);
+		
+		for( i = 1; i < inAssignment.size; i++){
+
+			if(inAssignment.match(i, T)){
+				tempLit.pos = 1;
+				tempLit.neg = 0;			
+			}else if(inAssignment.match(i, G)){
+				tempLit.pos = 0;
+				tempLit.neg = 1;			
+			}else{
+				tempLit.pos = 0;
+				tempLit.neg = 0;			
+			}
+
+			resultVector[i] = tempLit;
+		}
 	
 	}else{
 	

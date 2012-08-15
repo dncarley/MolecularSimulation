@@ -1,11 +1,20 @@
 c 
-c MolecularSimulation 0.9.3
-c Simulation written: Jan  9 2012 -- 17:09:38
+c MolecularSimulation 1.0.2
+c Simulation written: Thu Jul 19 14:52:42 2012
 c Test: Lipton
 c Input: ./data/toy/simple2.cnf
 c 
-s UNSATISFIABLE
-v 0
-c Execution time: 0
-c Memory usage:   0
+s SATISFIABLE
+v -1 -2 -3 0
+c algorithmType:  Lipton
+c algorithmTime:  0
+c solutionMemory: 17
+c mixCount:       9
+c extractCount:   3
+c appendCount:    6
+c splitCount:     3
+c spliceCount:    0
+c purifyCount:    2
+c numVar:         3
+c numClause:      1
 c 

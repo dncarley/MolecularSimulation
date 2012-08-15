@@ -12,7 +12,7 @@ class runtimeData
 
 	public:
 
-		time_t executionTime;		///< Execution time in seconds.
+		float  executionTime;		///< Execution time in seconds.
 		size_t memoryUsage;			///< Simulation memory usage in bytes.
 		size_t mixCount;			///< Accumulate number of mix operations.
 		size_t extractCount;		///< Accumulate number of extract operations.
@@ -39,7 +39,7 @@ class arguments
 		int debug;						///< 0 No debug, 1 print debugging				
 		int writeFile;					///< 0 Print to STDOUT, 1 write to outputfile
 		int isSat;						///< 0 false, 1 true, 2 unknown 
-		time_t executionTime;			///< Execution time in seconds.
+		float executionTime;			///< Execution time in seconds.
 		size_t memoryUsage;				///< Simulation memory usage in bytes.
 		runtimeData myData;
 		char * filename;				///< input DIMACS CNF filename

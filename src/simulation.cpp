@@ -4,9 +4,7 @@
  *
  * \section int_sec Introduction
  *
- * \par This program is a simulated molecular lab for experimenting with DNA operations.  
- *
- * \par Execution of a directory of DIMACS CNF (*.cnf) expressions can be performed with the Perl runSimulation.pl.
+ * \par Molecular Simulation implements molecular operators for simulation of molecular algorithms for Satisfiability.
  *
  * \section sys_sec System requirements
  *
@@ -14,13 +12,16 @@
  *   - GCC
  *   - Perl
  *
+ *	\par Requirements for parallel execution:
+ *   - Perl Parallel::ForkManager
+ *
  *	\par Additional requirements for generating documentation:
  *   - Doxygen
  *
- * \par This program was designed to execute in a 64-bit *NIX environment.  It has been tested on Apple OS X 10.6.8.  The final build will execute natively on the RIT CS machines (portability of the Perl scripts is in progress).
+ * \par This program was designed to execute in a 64-bit *NIX environment.  Samples were executed on a 64-bit architecture with 4 GB of memory running Apple OS X 10.7.4.  
  *
  * \section alg_sec Algorithms
- * \par There are three molecular Satisfiability algorithms implemented in this environment.
+ * \par Molecular Simulation simulates the execution of three molecular algorithms for Satisfiability.
  *
  * \subsection lip_sec Lipton's algorithm  
  *
@@ -36,18 +37,17 @@
  *
  * \section exe_sec Execution
  * 
- * \par Automation of execution can be done simply by executing the perl script
+ * \par Automation of execution can be done simply by executing the Perl script
  *
  * $ perl runSimulation.pl
  *
- * \par from the directory: project/implementation/molecularSimulation/
+ * \par from the directory: MolecularSimulation/
  *
  * \par This file will sequentially invoke `build.pl' and `executeMolecularSat.pl' 
  *
  * \subsection input_sec Input
  * 
  *  \par Input is provided as DIMACS CNF (*.cnf) to execute a specified algorithm.  Arguments may be provided to assist in debugging (-d) or write the simulation results to a file. 
- *
  *
  * \subsection output_sec Output
  *

@@ -19,6 +19,7 @@ class oligo : public dna32
 		void printDNA();
 		void clear();
 		void append(DNA s);
+		void setNeuc(unsigned n, DNA s);
 		bool match(unsigned n, DNA s);
 		std::string oligo2string();
 		void string2oligo(std::string inString);	
