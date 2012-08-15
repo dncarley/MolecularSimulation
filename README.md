@@ -85,21 +85,22 @@ This file will sequentially invoke <code>build.pl</code> and <code>executeMolecu
     <td> </td>
     <td> Ogihara and Ray's algorithm</td>
   </tr>    
+  <tr>
+    <td> <code>-debug</code> </td>
+    <td> </td>
+    <td> Debug</td>
+  </tr>    
+  <tr>
+    <td> <code>-p</code> </td>
+    <td> <code> [CNF file path] </code> </td>
+    <td> Specify CNF file path.</td>
+  </tr>    
+  <tr>
+    <td> <code>-f</code> </td>
+    <td> </td>
+    <td> Write output to file.</td>
+  </tr>    
 </table>
-
-| -------- | ---------- | -----------                  |
-| Argument | Parameters | Description                  |
-| -------- | ---------- | -----------                  |
-| -d       |            | Distribution algorithm       |
-| -l       |            | Lipton's algorithm           |
-| -o       |            | Ogihara and Ray's algorithm  |
-| -------- | ---------- | -----------                  |
-| -debug   |            | Debug                        |
-| -------- | ---------- | -----------                  |
-| -p       |            | Specify CNF file path        |
-| -------- | ---------- | -----------                  |
-| -f       |            | Write output to file         |
-| -------- | ---------- | -----------                  |
 
 # Output
 
