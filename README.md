@@ -64,6 +64,29 @@ This file will sequentially invoke <code>build.pl</code> and <code>executeMolecu
 
 # Input
 
+<table border="1">
+  <tr>
+    <td>Argument</td>
+    <td>Parameters</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td> <code>-d</code> </td>
+    <td> </td>
+    <td> Distribution algorithm</td>
+  </tr>
+  <tr>
+    <td> <code>-l</code> </td>
+    <td> </td>
+    <td> Lipton's algorithm</td>
+  </tr>  
+  <tr>
+    <td> <code>-o</code> </td>
+    <td> </td>
+    <td> Ogihara and Ray's algorithm</td>
+  </tr>    
+</table>
+
 | -------- | ---------- | -----------                  |
 | Argument | Parameters | Description                  |
 | -------- | ---------- | -----------                  |
