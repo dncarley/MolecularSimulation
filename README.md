@@ -25,16 +25,16 @@ See LICENSE for details.
 
 MolecularSimulation requires the following software to be installed on your system:
 
-	*<a href="http://gcc.gnu.org/">GCC</a>
-	*<a href="http://www.perl.org/">Perl</a>
+*<a href="http://gcc.gnu.org/">GCC</a>
+*<a href="http://www.perl.org/">Perl</a>
 
 Requirements for parallel execution:
 
-	*<a href="http://search.cpan.org/~dlux/Parallel-ForkManager-0.7.5/ForkManager.pm">Perl Parallel::ForkManager</a>
+*<a href="http://search.cpan.org/~dlux/Parallel-ForkManager-0.7.5/ForkManager.pm">Perl Parallel::ForkManager</a>
 
 Additional requirements for generating documentation:
 
-	*<a href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a>
+*<a href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a>
 
 This program was designed to execute in a 64-bit *NIX environment. Samples were executed on a 64-bit architecture with 4 GB of memory running Apple OS X 10.7.4.
 
@@ -58,7 +58,7 @@ The distribution algorithm parses an input CNF expression into growing and self 
 
 Automation of execution can be done simply by executing the Perl script from the directory: <code>MolecularSimulation/</code>
 
-	<code> $ perl runSimulation.pl</code>
+<code> $ perl runSimulation.pl</code>
 
 This file will sequentially invoke <code>build.pl</code> and <code>executeMolecularSat.pl</code>
 
