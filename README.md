@@ -1,9 +1,9 @@
 
-		<center> Molecular Simulation 1.0.2 </center>
+# README Molecular Simulation 1.0.2
+
 ---------------------------------------------------------------
 
 # Overview
-
 
 This directory contains the source to MolecularSimulation, a simulation
 environment for experimentation with DNA computation.
@@ -11,9 +11,9 @@ environment for experimentation with DNA computation.
 Three molecular algorithms to solve Satsfiability are included in the
 implementation.  These are:
 
-	* Liptons's algorithm 			(Brute force) 
-	* Ogihara and Ray's algorithm 	(Branching heuristics) 
-	* Distribution algorithm			(Constructive)
+* Liptons's algorithm           (Brute force) 
+* Ogihara and Ray's algorithm   (Branching heuristics) 
+* Distribution algorithm        (Constructive)
 
 # License
 
@@ -23,21 +23,21 @@ See LICENSE for details.
 
 # System requirements
 
-MolecularSimulation requires the following software to be installed on your system:
+This program was designed to execute in a 64-bit *NIX environment. Samples were executed on a 64-bit architecture with 4 GB of memory running Apple OS X 10.7.4.
+
+## MolecularSimulation requires the following software to be installed on your system:
 
 *<a href="http://gcc.gnu.org/">GCC</a>
 
 *<a href="http://www.perl.org/">Perl</a>
 
-Requirements for parallel execution:
+## Requirements for parallel execution:
 
 *<a href="http://search.cpan.org/~dlux/Parallel-ForkManager-0.7.5/ForkManager.pm">Perl Parallel::ForkManager</a>
 
-Additional requirements for generating documentation:
+## Additional requirements for generating documentation:
 
 *<a href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a>
-
-This program was designed to execute in a 64-bit *NIX environment. Samples were executed on a 64-bit architecture with 4 GB of memory running Apple OS X 10.7.4.
 
 # Algorithms
 
@@ -53,7 +53,7 @@ Originally introduced in 1996 by Ogihara, and extended in 1997 with Ray, this al
 
 ## Distribution algorithm
 
-The distribution algorithm parses an input CNF expression into growing and self regulated set of possible combinations. A possible combination begins with all members of the first clause, and subsequent variables from independent clauses are built upon the reduced state. If there exist self-complementary assignments spanning a clause, then the clause is eliminated.
+The Distribution algorithm parses an input CNF expression into growing and self regulated set of possible combinations. A possible combination begins with all members of the first clause, and subsequent variables from independent clauses are built upon the reduced state. If there exist self-complementary assignments spanning a clause, then the clause is eliminated.
 
 # Execution
 
