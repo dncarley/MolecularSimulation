@@ -43,15 +43,15 @@ This program was designed to execute in a 64-bit *NIX environment. Samples were 
 
 Molecular Simulation simulates the execution of three molecular algorithms for Satisfiability.
 
-## Lipton's algorithm
+#### Lipton's algorithm
 
-Introduced in 1995 by Lipton, this algorithm creates an exponential search space for the CNF expression. Once the space is created, each variable is evaluated and the space is reduced to only the solutions that satisfy all remaining strings. This algorithm is analogous to a conventional brute-force search for all solutions.
+Introduced in 1995 by Richard Lipton, this algorithm creates an exponential search space for the CNF expression. Once the space is created, each variable is evaluated and the space is reduced to only the solutions that satisfy all remaining strings. This algorithm is analogous to a conventional brute-force search for all solutions.
 
-## Ogihara and Ray's algorithm
+#### Ogihara and Ray's algorithm
 
-Originally introduced in 1996 by Ogihara, and extended in 1997 with Ray, this algorithm builds a solution space with a breadth-first search evaluation. Prior to execution to the algorithm, each of the clauses variable's in the CNF expression are sorted.
+Originally introduced in 1996 by Mitsunori Ogihara, and extended in 1997 with Animesh Ray, this algorithm builds a solution space with a breadth-first search evaluation. Prior to execution to the algorithm, each of the clauses variable's in the CNF expression are sorted.
 
-## Distribution algorithm
+#### Distribution algorithm
 
 The Distribution algorithm parses an input CNF expression into growing and self regulated set of possible combinations. A possible combination begins with all members of the first clause, and subsequent variables from independent clauses are built upon the reduced state. If there exist self-complementary assignments spanning a clause, then the clause is eliminated.
 
