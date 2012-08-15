@@ -26,6 +26,7 @@ See LICENSE for details.
 MolecularSimulation requires the following software to be installed on your system:
 
 *<a href="http://gcc.gnu.org/">GCC</a>
+
 *<a href="http://www.perl.org/">Perl</a>
 
 Requirements for parallel execution:
