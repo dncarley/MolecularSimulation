@@ -25,17 +25,17 @@ See LICENSE for details.
 
 This program was designed to execute in a 64-bit *NIX environment. Samples were executed on a 64-bit architecture with 4 GB of memory running Apple OS X 10.7.4.
 
-## MolecularSimulation requires the following software to be installed on your system:
+#### MolecularSimulation requires the following software to be installed on your system:
 
 *<a href="http://gcc.gnu.org/">GCC</a>
 
 *<a href="http://www.perl.org/">Perl</a>
 
-## Requirements for parallel execution:
+#### Requirements for parallel execution:
 
 *<a href="http://search.cpan.org/~dlux/Parallel-ForkManager-0.7.5/ForkManager.pm">Perl Parallel::ForkManager</a>
 
-## Additional requirements for generating documentation:
+#### Additional requirements for generating documentation:
 
 *<a href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a>
 
