@@ -58,7 +58,7 @@ The distribution algorithm parses an input CNF expression into growing and self 
 
 Automation of execution can be done simply by executing the Perl script from the directory: <code>MolecularSimulation/</code>
 
-	*<code>$ perl runSimulation.pl</code>
+	<code> $ perl runSimulation.pl</code>
 
 This file will sequentially invoke <code>build.pl</code> and <code>executeMolecularSat.pl</code>
 
@@ -66,9 +66,9 @@ This file will sequentially invoke <code>build.pl</code> and <code>executeMolecu
 
 <table border="1">
   <tr>
-    <td>Argument</td>
-    <td>Parameters</td>
-    <td>Description</td>
+    <td><b> Argument</b></td>
+    <td><b>Parameters</b></td>
+    <td><b>Description</b></td>
   </tr>
   <tr>
     <td> <code>-d</code> </td>
