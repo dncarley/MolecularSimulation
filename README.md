@@ -1,9 +1,10 @@
-		---	README --
+		<center> README </center> 
 ---------------------------------------------------------------
-		-- Molecular Simulation 1.0.1 -- 
+		<center> Molecular Simulation 1.0.2 </center>
 ---------------------------------------------------------------
 
---- Overview
+# Overview
+
 
 This directory contains the source to MolecularSimulation, a simulation
 environment for experimentation with DNA computation.
@@ -15,17 +16,20 @@ implementation.  These are:
 	Ogihara and Ray's algorithm 	(Branching heuristics) 
 	Distribution algorithm			(Constructive)
 
---- License
+# License
+
 
 Molecular Simulation is released under the MIT license.  
 
 See LICENSE for details.
 
---- Introduction
+# Introduction
+
 
 Molecular Simulation implements molecular operators for simulation of molecular algorithms for Satisfiability.
 
---- System requirements
+# System requirements
+
 
 MolecularSimulation requires the following software to be installed on your system:
 
@@ -42,7 +46,8 @@ Additional requirements for generating documentation:
 
 This program was designed to execute in a 64-bit *NIX environment. Samples were executed on a 64-bit architecture with 4 GB of memory running Apple OS X 10.7.4.
 
---- Algorithms
+# Algorithms
+
 
 Molecular Simulation simulates the execution of three molecular algorithms for Satisfiability.
 
@@ -58,7 +63,8 @@ Distribution algorithm
 
 The distribution algorithm parses an input CNF expression into growing and self regulated set of possible combinations. A possible combination begins with all members of the first clause, and subsequent variables from independent clauses are built upon the reduced state. If there exist self-complementary assignments spanning a clause, then the clause is eliminated.
 
---- Execution
+# Execution
+
 
 Automation of execution can be done simply by executing the Perl script
 
@@ -68,10 +74,10 @@ from the directory: MolecularSimulation/
 
 This file will sequentially invoke `build.pl' and `executeMolecularSat.pl'
 
---- Input
+# Input
 
 Input is provided as DIMACS CNF (*.cnf) to execute a specified algorithm. Arguments may be provided to assist in debugging (-d) or write the simulation results to a file.
 
---- Output
+# Output
 
 Output consists of a summary of a test execution. This output conforms to the SAT Competition format for the status of the `*.cnf' expression. If desired, the output may be directed to a file. Conditional formatting of comment fields provide execution details.
