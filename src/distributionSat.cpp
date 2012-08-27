@@ -1,3 +1,7 @@
+/*! \file distributionSat.cpp
+	\brief Defines function for Distribution algorithm.
+
+*/
 
 #include "distributionSat.h"
 
@@ -48,6 +52,8 @@ arguments distributionSat(const arguments myArgs){
 		
 		returnArgs.myData.mixCount +=1;
 		returnArgs.myData.purifyCount +=1;
+		
+
 	}
 		
 	returnArgs.result.resize(Ts.size());

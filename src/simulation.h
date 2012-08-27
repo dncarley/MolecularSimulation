@@ -1,3 +1,8 @@
+/*! \file simulation.h
+	\brief Defines simulation class.
+
+*/
+
 #ifndef SIMULATION_H_DEFINED
 #define SIMULATION_H_DEFINED
 

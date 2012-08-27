@@ -1,3 +1,7 @@
+/*! \file gel.cpp
+	\brief Defines functions for gel class.
+
+*/
 
 #include <vector>
 #include "gel.h"

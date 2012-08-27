@@ -1,3 +1,8 @@
+/*! \file distributionSat.h
+	\brief Defines function prototype for Distribution algorithm.
+
+*/
+
 #ifndef DISTRIBUTION_SAT_DEFINED
 #define DISTRIBUTION_SAT_DEFINED
 

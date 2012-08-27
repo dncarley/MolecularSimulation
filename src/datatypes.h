@@ -1,6 +1,10 @@
+/*! \file datatypes.h
+	\brief Defines classes for DNA, literal, and variable.
+	
+*/
+
 #ifndef DATATYPES_H_DEFINED
 #define DATATYPES_H_DEFINED
-/// datatypes.h
 
 #include <inttypes.h>
 #include <vector>

@@ -1,3 +1,8 @@
+/*! \file simulation.cpp
+	\brief Defines simulation function and main() entry.
+
+*/
+
 #include "simulation.h"
 
 /*! \mainpage Molecular Simulation

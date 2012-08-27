@@ -1,3 +1,8 @@
+/*! \file gel.h
+	\brief Defines gel class.
+	
+*/
+
 #ifndef GEL_H_DEFINED
 #define GEL_H_DEFINED
 

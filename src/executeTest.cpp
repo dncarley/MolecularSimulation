@@ -1,3 +1,7 @@
+/*! \file executeTest.cpp
+	\brief Defines executeTest function.
+
+*/
 
 #include "executeTest.h"
 

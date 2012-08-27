@@ -1,3 +1,7 @@
+/*! \file arguments.cpp
+	\brief Defines functions for arguments and runtimeData classes.
+
+*/
 
 #include "arguments.h"
 

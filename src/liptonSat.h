@@ -1,3 +1,8 @@
+/*! \file liptonSat.h
+	\brief Defines function prototypes for Lipton's algorithm.
+
+*/
+
 #ifndef LIPTON_SAT_H_DEFINED
 #define LIPTON_SAT_H_DEFINED
 

@@ -1,3 +1,7 @@
+/*! \file oligo.cpp
+	\brief Defines functions for oligo class.
+
+*/
 
 #include "oligo.h"
 

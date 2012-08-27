@@ -1,3 +1,8 @@
+/*! \file oligo.h
+	\brief Defines oligo class.
+	
+*/
+
 #ifndef OLIGO_H_DEFINED
 #define OLIGO_H_DEFINED
 

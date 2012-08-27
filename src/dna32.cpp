@@ -1,3 +1,7 @@
+/*! \file dna32.cpp
+	\brief Defines functions for dna32 class.
+
+*/
 
 #include "dna32.h"
 

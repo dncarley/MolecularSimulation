@@ -1,3 +1,8 @@
+/*! \file dna32.h
+	\brief Defines dna32 class.
+	
+*/
+
 #ifndef DNA32_H_DEFINED
 #define DNA32_H_DEFINED
 

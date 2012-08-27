@@ -1,6 +1,9 @@
+/*! \file verifySat.cpp
+	\brief Defines functions for Sat verifier.
+
+*/
 
 #include "verifySat.h"
-
 
 bool verifySat(const CNF inCNF, const std::vector<literal> satVector){
 

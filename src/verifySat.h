@@ -1,3 +1,8 @@
+/*! \file verifySat.h
+	\brief Defines function prototypes for Sat verifier.
+
+*/
+
 #ifndef SAT_VERIFY_H_DEFINED
 #define SAT_VERIFY_H_DEFINED
 

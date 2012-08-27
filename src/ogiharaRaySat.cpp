@@ -1,3 +1,7 @@
+/*! \file ogiharaRaySat.cpp
+	\brief Defines functions for Ogihara and Ray's algorithm.
+
+*/
 
 #include "ogiharaRaySat.h"
 

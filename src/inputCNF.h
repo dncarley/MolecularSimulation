@@ -1,3 +1,8 @@
+/*! \file inputCNF.h
+	\brief Defines class for CNF datatype.
+	
+*/
+
 #ifndef INPUTCNF_H_INCLUDED
 #define INPUTCNF_H_INCLUDED
 

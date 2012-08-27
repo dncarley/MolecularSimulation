@@ -1,3 +1,8 @@
+/*! \file arguments.h
+	\brief Defines classes for arguments and runtimeData.
+
+*/
+
 #ifndef ARGUMENT_PARSE_H_DEFINED
 #define ARGUMENT_PARSE_H_DEFINED
 

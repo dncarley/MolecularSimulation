@@ -1,3 +1,7 @@
+/*! \file inputCNF.cpp
+	\brief Defines functions for CNF class.
+
+*/
 
 #include "inputCNF.h"
 

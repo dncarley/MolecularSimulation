@@ -1,3 +1,7 @@
+/*! \file liptonSat.cpp
+	\brief Defines functions for Lipton's algorithm.
+
+*/
 
 #include "liptonSat.h"
 

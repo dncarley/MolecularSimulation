@@ -1,3 +1,7 @@
+/*! \file datatypes.cpp
+	\brief Defines functions for literal and variable classes.
+
+*/
 
 #include "datatypes.h"
 

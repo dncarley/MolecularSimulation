@@ -1,3 +1,8 @@
+/*! \file executeTest.h
+	\brief Defines function prototype for executeTest.
+
+*/
+
 #ifndef EXECUTE_TEST_H_DEFINED
 #define EXECUTE_TEST_H_DEFINED
 
