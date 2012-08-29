@@ -22,7 +22,7 @@ gel get_UV_Sat( gel T, variable u, variable v, runtimeData & myData){
 
 	T_T.mix( T_uT);		
 	T_T.mix( T_vT);
-	myData.mixCount += 2;
+	myData.mixCount += 1;
 	
 	T_T.purifyGel();
 	myData.purifyCount += 1;
@@ -67,7 +67,6 @@ arguments ogiharaRaySat (const arguments myArgs){
 		T_wF.mix(T);	T_wT.mix(T);
 
 		returnArgs.myData.splitCount += 1;
-		returnArgs.myData.mixCount += 2;
 
 		/// assign positive and negative variables for comparison		
 		X_k  = variable(k, POS);
@@ -86,7 +85,7 @@ arguments ogiharaRaySat (const arguments myArgs){
 		
 		/// append partial assignments
 		T_T.clear();			T_F.clear();
-		T_T = T_wT;				T_F = T_wF;
+		T_T = T_wT; 			T_F = T_wF;
 		T_T.append( X_k.neuc);	T_F.append( nX_k.neuc);
 		
 		returnArgs.myData.appendCount += 2;
@@ -95,11 +94,15 @@ arguments ogiharaRaySat (const arguments myArgs){
 		T.clear();
 		T.mix(T_T);		T.mix(T_F);
 		
-		returnArgs.myData.mixCount += 2;
+		returnArgs.myData.mixCount += 1;
 		
 		T.purifyGel();
 		
 		returnArgs.myData.purifyCount++;
+		
+		if(T.size() == 0){
+			break;
+		}	
 	}
 
 	//// Copy output to returnArgs

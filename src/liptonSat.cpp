@@ -47,6 +47,10 @@ arguments liptonSat(const arguments myArgs){
 
 		Ts.purifyGel();		/// eliminate duplicates
 		returnArgs.myData.purifyCount++;
+		
+		if( Ts.size() == 0){
+			break;
+		}
 	}
 	
 	returnArgs.result.resize(Ts.size());

@@ -53,7 +53,10 @@ arguments distributionSat(const arguments myArgs){
 		returnArgs.myData.mixCount +=1;
 		returnArgs.myData.purifyCount +=1;
 		
-
+		if( Ts.size() == 0){
+			break;
+		}
+		
 	}
 		
 	returnArgs.result.resize(Ts.size());
