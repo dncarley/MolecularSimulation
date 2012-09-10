@@ -16,6 +16,10 @@ arguments distributionSat(const arguments myArgs){
 	gel Ts, Tc, Tv;
 	
 	returnArgs = myArgs;
+	
+	if(returnArgs.debug){
+		fprintf(stderr, "c --- Begin Distribution\n");
+	}
 
 	Ts.clear();
 	Ts.mix(A);
@@ -42,8 +46,7 @@ arguments distributionSat(const arguments myArgs){
 			returnArgs.myData.splitCount +=1;
 			returnArgs.myData.extractCount +=2;
 			returnArgs.myData.appendCount +=1;
-			returnArgs.myData.mixCount +=1;
-			
+			returnArgs.myData.mixCount +=1;	
 		}
 		
 		Ts.clear();
@@ -52,6 +55,41 @@ arguments distributionSat(const arguments myArgs){
 		
 		returnArgs.myData.mixCount +=1;
 		returnArgs.myData.purifyCount +=1;
+		
+//
+//
+//
+if( returnArgs.debug)
+{
+	fprintf(stderr, "c clause: %zu\t\%zu\n", i, Ts.size());
+
+
+	if(Ts.size() > 0){
+		std::vector< std::vector<literal> > tempTube;
+		tempTube.resize(Ts.size());
+		for(size_t j = 0; j < Ts.size(); j++){
+			tempTube[j].resize(returnArgs.inputCNF.numVar);
+			tempTube[j] = oligo2satVector(Ts.tube[j], 1);
+		}
+		
+		for(size_t j = 0; j < Ts.size(); j++){	
+			fprintf(stderr, "c w ");
+			for(size_t k = 0; k < tempTube[j].size(); k++){
+				if( tempTube[j][k].isValid() ){
+					if(tempTube[j][k].neg == 1)
+						fprintf(stderr, "-");			
+					fprintf(stderr, "%lu ", (unsigned long)k);
+				}
+			}
+			fprintf(stderr,"0\n");
+		}	
+	}		
+}
+//
+//
+//
+				
+		
 		
 		if( Ts.size() == 0){
 			break;
@@ -63,7 +101,6 @@ arguments distributionSat(const arguments myArgs){
 	for(size_t i = 0; i < Ts.size(); i++){
 		returnArgs.result[i].resize(returnArgs.inputCNF.numVar);
 		returnArgs.result[i] = oligo2satVector(Ts.tube[i], 1);
-		
 	}
 
 	// Set satisfiable flag in arguments

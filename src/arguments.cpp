@@ -118,18 +118,18 @@ void arguments::printArguments(){
 	
 	size_t i, j;
 
-	printf("algorithmType :\t%i\n", algorithmType);
-	printf("debug         :\t%i\n", debug);
-	printf("debug         :\t%i\n", writeFile);
-	printf("isSat         :\t%i\n", isSat);
-	printf("executionTime :\t%f\n", myData.executionTime);
-	printf("memoryUsage   :\t%lu\n", (unsigned long)myData.memoryUsage);
-	printf("filename      :\t%s\n", filename);
-	printf("outputfile    :\t%s\n", outputfile);
-	printf("version       :\t%s\n", versionNumber);
-	printf("inputCNF      :\t\n");
+	printf("c algorithmType :\t%i\n", algorithmType);
+	printf("c debug         :\t%i\n", debug);
+	printf("c debug         :\t%i\n", writeFile);
+	printf("c isSat         :\t%i\n", isSat);
+	printf("c executionTime :\t%f\n", myData.executionTime);
+	printf("c memoryUsage   :\t%lu\n", (unsigned long)myData.memoryUsage);
+	printf("c filename      :\t%s\n", filename);
+	printf("c outputfile    :\t%s\n", outputfile);
+	printf("c version       :\t%s\n", versionNumber);
+	printf("c inputCNF      :\t\n");
 	inputCNF.printCNF_order();
-	printf("result        :\t\n");
+	printf("c result        :\t\n");
 	
 	if(result.size() >0){
 		for(i = 0; i < result.size(); i++){	

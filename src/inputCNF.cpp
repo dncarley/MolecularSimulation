@@ -147,9 +147,9 @@ void CNF::parseCNF(const char* filename){
 ///
 void CNF::printCNF_table(){
 
-	printf("\t\t\t    +-+-+-      +-+-+-      +-+-+-      +-+-+-\n");
+	printf("c \t\t\t    +-+-+-      +-+-+-      +-+-+-      +-+-+-\n");
 	for(int i = 0; i < CNF_TABLE.size(); i++){
-		printf("line: %.2i\t", i);
+		printf("c line: %.2i\t", i);
 			printf("---%i\t", i<<6);
 		
 		CNF_TABLE[i][0].printLiteral();		printf("::");
@@ -168,7 +168,7 @@ void CNF::printCNF_table(){
 void CNF::printCNF_order(){
 
 	for(unsigned i = 0; i < CNF_ORDER.size(); i++){
-		printf("line: %.2i\t", i);
+		printf("c line: %.2i\t", i);
 		printCNF_orderLine(i);
 
 	}
